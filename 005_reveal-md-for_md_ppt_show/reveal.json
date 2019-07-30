@@ -1,0 +1,12 @@
+{
+  "controls": true,
+  "controlsTutorial" : true,
+  "progress": true,
+  "slideNumber": true,
+  "hash": true,
+  "history": true,
+  "overview": true,
+  "transitionSpeed": "slow",
+  "transition": "zoom",
+  "showNotes": true
+}
