@@ -111,10 +111,10 @@ Note:
 > 3. 其他语法和 markdown 几乎一致的, [Markdown 从入门到精通](https://www.geekpanshi.com/archives/e0c74487.html)。
 
 #### 9. 文件说明：
-> 1. [启动指定 md 文件的 PPT 展示](/1_start_ppt.bat)
+> 1. [启动指定 md 文件的 PPT 展示](/005_reveal-md-for_md_ppt_show/1_start_ppt.bat)
 >
-> 2. [导出 md 文件到指定目录的 PDF](/2_generate_pdf.bat)
+> 2. [导出 md 文件到指定目录的 PDF](/005_reveal-md-for_md_ppt_show/2_generate_pdf.bat)
 >
-> 3. [reveal-md PPT 展示的 md 文件 demo](/demo.md)
+> 3. [reveal-md PPT 展示的 md 文件 demo](/005_reveal-md-for_md_ppt_show/demo.md)
 >
-> 4. [reveal-md PPT 展示的 json 配置样例](/reveal.json)
+> 4. [reveal-md PPT 展示的 json 配置样例](/005_reveal-md-for_md_ppt_show/reveal.json)
