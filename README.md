@@ -29,3 +29,8 @@
 > 由于之前使用的两个图床 ： [Imgur](https://i.imgur.com)（国内访问不稳定） 和 新浪图床（不允许第三方平台调用），所以打算把博客两个图床的图片全部爬下来，迁移到 github。
 >
 > 详情见目录： [004_localizating_the_pics_of_blog_post](/004_localizating_the_pics_of_blog_post)。
+
+### 5. 使用 reveal-md 来做 md 文件的 PPT 展示
+> 一个 [Markdown](https://www.geekpanshi.com/archives/e0c74487.html) 的中重度患者，在被要求做一个 PPT 的演讲时，毅然决然的走向了基于 MARKDOWN 的 PPT 展示探索，很幸运的是已经有了成熟的方案 [reveal-md](https://github.com/webpro/reveal-md)
+>
+> 请见请链接：[005_reveal-md-for_md_ppt_show](/005_reveal-md-for_md_ppt_show)。
