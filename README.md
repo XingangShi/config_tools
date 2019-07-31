@@ -14,6 +14,8 @@
 
 ### 2. MacOs
 > 记录 MacOs 相关的工具和配置。
+#### 2.1 增加 [spacemacs](http://spacemacs.org/) Emacs 的 eveil 配置
+>> 如题，详情见：[spacemacs](/002_macos/spacemacs)
 
 ### 3. Windows
 > 记录 Windows 相关的工具和配置。
