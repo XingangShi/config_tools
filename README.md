@@ -21,6 +21,9 @@
 #### 3.1 Windows 下清理 C 盘垃圾的小工具
 > 如题，详情见：[./003_windows/clear_rubbish.bat](/003_windows/clear_rubbish.bat)。
 
+#### 3.2 查找文件工具 Everything
+> 如题，windows 下快速查找本地文件的工具，[Everything_1.4.1.877](/003_windows/exe/Everything_1.4.1.877_x64-Setup.exe)
+
 #### 3.2 Windows 下针对 FC660M 使用 [AutoHotkey](https://www.autohotkey.com/) 改建成 HHKB 模式的脚本
 > 工欲善其事必先利其器，普通键盘的 Ctrl 键经常会按的小拇指疼，但是又碍于 HHKB 的高昂价格，所以自己虚拟该键，拯救小拇指。
 >
