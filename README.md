@@ -10,6 +10,10 @@
 
 ### 1. Linux
 > 记录 Linux 相关的工具和配置。
+#### 1.1 博客自动发布备份更新脚本
+> 博客通过 hexo 来更新，同时发布到两个 git 的仓库（Github 和 git.dev.tencent.com），互相备份。
+> 
+> 如题，详情见：[blog_auto_release.sh](/001_linux/blog_auto_release.sh)
 
 
 ### 2. MacOs
