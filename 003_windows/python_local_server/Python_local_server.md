@@ -15,7 +15,11 @@
 >> 3. 配置好环境变量后，一路点确定，关闭所有窗口。
 
 #### 3. 启动服务
-> 把上述的两个 bat 文件，拷贝到你你想共享的目录下，根据你所安装的 python 版本，选择启动的脚本。
+> 把下面述的两个 bat 文件，拷贝到你你想共享的目录下，根据你所安装的 python 版本，选择启动的脚本。
+>
+> [python2.x_local_server](/003_windows/python_local_server/server_with_port_5001-python2.bat)
+>
+> [python2.x_local_server](/003_windows/python_local_server/server_with_port_5001-python3.bat)
 >
 > 备注：可以用 记事本 打开 bat 修改里面的端口号，这里默认端口是 5001。
 
