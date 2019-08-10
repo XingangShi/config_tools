@@ -1,4 +1,24 @@
+
 #CommentFlag //
+
+//Change Comment flag from  # to  //
+
+// SRC：
+//
+// 1. Home： https://www.autohotkey.com/
+//
+// 2. Chinses Doc： http://ahkcn.sourceforge.net/docs/AutoHotkey.htm
+//
+// 3. W3C keyboard Info： https://www.w3.org/TR/uievents-code/ https://www.w3.org/TR/uievents-key/
+
+
+// version Infos:
+//
+// v 1.0 : init.
+//
+// v 1.1 : init HHKB mode.
+//
+// v 1.2 : fix bug, ` can't be insted,  back quote should be instead by {``}。
 
 Shift & Backspace::send {|}
 
@@ -45,8 +65,8 @@ Up & -::send {F11}
 Up & =::send {F12}
 
 
-Up & \::send {Insert}
-Up & Backspace::send {Delete}
+Up & \::send {Delete}
+Up & Backspace::send {Insert}
 
 Up & I::send {PrintScreen}
 Up & P::send {Pause}
@@ -69,6 +89,13 @@ RControl::send {RAlt}
 
 Up & RWin::send {Media_Stop}
 
-Up & Escape::send {`}
+
 Up & Insert::send {~}
-Up & Delete::send {`}
+Up & Delete::send {``}
+
+
+Up & Escape::send {``}
+Up & Q::send {~}
+
+Up & E::send {``}
+Up & R::send {~}
