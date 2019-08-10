@@ -9,6 +9,19 @@
 >
 > `$git branch -r | grep "v_2019" | awk -F/ '{print $2"/"$3}' | sort -r -f`
 
+##### 1.2 pip 安装不使用缓存
+> 自己写 pip 库时，有时候刚发布版本，会发现测试安装时还是使用旧的版本。
+>
+> 1. 使用参数 `--no-cache-dir` 参数
+>
+> 2. 直接删除缓存
+>>
+>> 2.1 Linux and Unix `~/.cache/pip`
+>>
+>> 2.2 OS X `~/Library/Caches/pip`
+>>
+>> 2.3 Windows `%LocalAppData%\pip\Cache`
+
 #### 2. MacOs
 ##### 2.1
 
