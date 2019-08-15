@@ -52,7 +52,7 @@ exit
 >> 3. 添加授权过秘钥。
 >> 4. 卸载秘钥。
 
-```Python
+```
 GeekPanshi MINGW64 /e/for_shard
 $ eval "$(ssh-agent -s)"
 Agent pid 2498
@@ -60,7 +60,7 @@ Agent pid 2498
 GeekPanshi MINGW64 /e/for_shard
 $ ssh-add ../selfDatas/ssh_keys/geekpanshi/geekpanshi_2048
 Enter passphrase for ../selfDatas/ssh_keys/geekpanshi/geekpanshi_2048:
-Identity added: ../selfDatas/ssh_keys/geekpanshi/geekpanshi_2048 (../selfDatas/ssh_keys/geekpanshi/geekpanshi_2048)
+Identity added: ../selfDatas/ssh_keys/geekpanshi/geekpanshi_2048
 
 GeekPanshi MINGW64 /e/for_shard
 $ ssh-agent -k
