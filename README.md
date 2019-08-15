@@ -55,3 +55,9 @@
 > 请见请链接：[005_reveal-md-for_md_ppt_show](/005_reveal-md-for_md_ppt_show)。
 
 
+### 6. 增加一个 Xshell 的配色方案
+> 一个 [Xshell](https://xshell.en.softonic.com/) 的配色方案。
+>
+> 使用方法： 工具 --》 配色方案 --》 导入
+>
+> 配色方案详情：[xshell_colors_on_black](/003_windows/xshell_colors_on_black.xcs)
