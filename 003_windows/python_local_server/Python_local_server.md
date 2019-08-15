@@ -17,11 +17,9 @@
 #### 3. 启动服务
 > 把下面述的两个 bat 文件，拷贝到你你想共享的目录下，根据你所安装的 python 版本，选择启动的脚本。
 >
-> [python2.x_local_server](/003_windows/python_local_server/server_with_port_5001-python2.bat)
+> **Windows**：[server_with_port_5001.bat](/003_windows/python_local_server/server_with_port_5001.bat)
 >
-> [python2.x_local_server](/003_windows/python_local_server/server_with_port_5001-python3.bat)
->
-> 备注：可以用 记事本 打开 bat 修改里面的端口号，这里默认端口是 5001。
+> **Linux**：[server_with_port_5001.sh](/003_windows/python_local_server/server_with_port_5001.sh)
 
 #### 4. 在浏览器打开本地服务器
 > 默认的 5001 对应的网址是
@@ -29,3 +27,8 @@
 >> 1. [http://localhost:5001](http://localhost:5001/)
 >>
 >> 2. [http://127.0.0.1:5001](http://127.0.0.1:5001)
+
+#### 备注
+> 1. 可以用 记事本 打开 bat/sh 文件修改里面的端口号，这里默认端口是 5001。
+>
+> 2. 将 start_local_http_server.py 和 对应的启动脚本 server_with_port_5001.bat 或 server_with_port_5001.sh 放在需要作为服务器根目录的路径下即可。
