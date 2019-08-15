@@ -31,4 +31,4 @@
 #### 备注
 > 1. 可以用 记事本 打开 bat/sh 文件修改里面的端口号，这里默认端口是 5001。
 >
-> 2. 将 start_local_http_server.py 和 对应的启动脚本 server_with_port_5001.bat 或 server_with_port_5001.sh 放在需要作为服务器根目录的路径下即可。
+> 2. 将 [start_local_http_server.py](/003_windows/python_local_server/start_local_http_server.py) 和 对应的启动脚本 [server_with_port_5001.bat](/003_windows/python_local_server/server_with_port_5001.bat) 或 [server_with_port_5001.sh](/003_windows/python_local_server/server_with_port_5001.sh) 放在需要作为服务器根目录的路径下即可。
