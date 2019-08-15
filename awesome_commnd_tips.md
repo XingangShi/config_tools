@@ -22,6 +22,11 @@
 >>
 >> 2.3 Windows `%LocalAppData%\pip\Cache`
 
+##### 1.3 Linux 创建用户和删除用户
+> 创建用户用 `adduser` 不要用 `useradd`，删除用户用 `userdel`。
+>
+> **因为 `adduser` 会创建家目录，是一个 perl 写的交互式的创建用户，`useradd` 是个裸命令，创建的用户其实啥都干不了。**
+
 #### 2. MacOs
 ##### 2.1
 
