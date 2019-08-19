@@ -27,6 +27,27 @@
 >
 > **因为 `adduser` 会创建家目录，是一个 perl 写的交互式的创建用户，`useradd` 是个裸命令，创建的用户其实啥都干不了。**
 
+##### 1.4 批量转换文件换行符
+> 1. `$ find . -name "*.py" | xargs dos2unix`
+>
+> 2. `$ find . -name "*.sh" -exec dos2unix {} \;`
+>
+> **NOTE**：
+>> 换成 `dos2unix` 换成 `unix2dos` 逆向操作。
+>>
+>> Linux 安装：
+>>>
+>>> 1. 命令行安装 `$ yum -y install dos2unix* unix2dos*`
+>>>
+>>  2. 安装包安装
+>>> `$ wget http://terminus.sk/~hany/_data/hd2u/hd2u-1.0.3.tgz`
+>>> `$ tar -xvf hd2u-1.0.3.tgz && cd hd2u-1.0.3`
+>>> `$ ./configure && make && make install`
+>>> `$ dos2unix --help`
+
+>> Windows 安装： [dos2unix 等工具包](https://sourceforge.net/projects/dos2unix/)
+
+
 #### 2. MacOs
 ##### 2.1
 
