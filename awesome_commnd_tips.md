@@ -44,9 +44,10 @@
 >>> `$ tar -xvf hd2u-1.0.3.tgz && cd hd2u-1.0.3`
 >>> `$ ./configure && make && make install`
 >>> `$ dos2unix --help`
-
+>>
 >> Windows 安装： [dos2unix 等工具包](https://sourceforge.net/projects/dos2unix/)
-
+>>
+>> 更多参考：[Dos2Unix / Unix2Dos - Text file format converters](https://waterlan.home.xs4all.nl/dos2unix.html)
 
 #### 2. MacOs
 ##### 2.1
