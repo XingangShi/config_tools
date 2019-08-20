@@ -8,6 +8,7 @@
 >
 > 如题，详情见：[awesome_commnd_tips.md](/awesome_commnd_tips.md)
 
+
 ### 1. Linux
 > 记录 Linux 相关的工具和配置。
 #### 1.1 博客自动发布备份更新脚本
@@ -20,6 +21,7 @@
 > 记录 MacOs 相关的工具和配置。
 #### 2.1 [spacemacs](http://spacemacs.org/)（[Emacs](https://www.gnu.org/software/emacs/)） 的 evil 模式配置
 >> 如题，详情见：[spacemacs](/002_macos/spacemacs)
+
 
 ### 3. Windows
 > 记录 Windows 相关的工具和配置。
@@ -50,6 +52,11 @@
 > 使用方法： 工具 --》 配色方案 --》 导入
 >
 > 配色方案详情：[xshell_colors_on_black](/003_windows/xshell_colors_on_black.xcs)
+
+#### 3.6 增加个人 Sublime_Text_3 配置
+>
+> [Preferences.sublime-settings](/003_windows/Preferences.sublime-settings)
+
 
 ### 4. 迁移博客中的第三方图床的图片到本地化
 > 由于之前使用的两个图床 ： [Imgur](https://i.imgur.com)（国内访问不稳定） 和 新浪图床（不允许第三方平台调用），所以打算把博客两个图床的图片全部爬下来，迁移到 github。
