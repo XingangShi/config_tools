@@ -32,6 +32,10 @@
 >
 > 2. `$ find . -name "*.sh" -exec dos2unix {} \;`
 >
+> 3. `$ find conf/ -name "*.*" |xargs sed -i 's/\r//'`
+>
+> 4. `$ sed -i 's/\r//' filename1 filename2 ...`
+>
 > **NOTE**：
 >> 换成 `dos2unix` 换成 `unix2dos` 逆向操作。
 >>
