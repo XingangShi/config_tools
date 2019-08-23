@@ -16,6 +16,16 @@
 >
 > 如题，详情见：[blog_auto_release.sh](/001_linux/blog_auto_release.sh)
 
+#### 1.2 Shell 颜色输出大全
+> Shell 不止是黑白分明，也可以多姿多彩。
+>
+> 如题，详情见：[output_color_syntax.sh](/001_linux/output_color_syntax.sh)
+
+
+#### 1.3 检查一些软件是否安装
+> 检查系统是否安装一些软件。
+>
+> 如题，详情见：[system_check_env.sh](/001_linux/system_check_env.sh)
 
 ### 2. MacOs
 > 记录 MacOs 相关的工具和配置。
