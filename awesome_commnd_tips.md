@@ -100,3 +100,10 @@ unset SSH_AUTH_SOCK;
 unset SSH_AGENT_PID;
 echo Agent pid 2498 killed;
 ```
+
+##### 3.3 pip 软件更新
+```
+$ python -m pip install --upgrade pip -i https://pypi.douban.com/simple
+$ pip install XXXX
+$ pyhton -m pip install XXXX
+```
