@@ -63,10 +63,14 @@
 >
 > 配色方案详情：[xshell_colors_on_black](/003_windows/xshell_colors_on_black.xcs)
 
-#### 3.6 增加个人 Sublime_Text_3 配置
+#### 3.6 Sublime_Text_3 相关
+> 增加个人 Sublime_Text_3 配置
+>>
+>> [Preferences.sublime-settings](/003_windows/Preferences.sublime-settings)
 >
-> [Preferences.sublime-settings](/003_windows/Preferences.sublime-settings)
-
+> Sublime Text 3： [Decode error - output not utf-8]
+>
+>> 在系统变量加入 `PYTHONIOENCODING`，值填写：`utf-8`。
 
 ### 4. 迁移博客中的第三方图床的图片到本地化
 > 由于之前使用的两个图床 ： [Imgur](https://i.imgur.com)（国内访问不稳定） 和 新浪图床（不允许第三方平台调用），所以打算把博客两个图床的图片全部爬下来，迁移到 github。
