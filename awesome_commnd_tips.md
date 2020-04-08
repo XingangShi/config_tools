@@ -2,6 +2,22 @@
 
 ---
 
+#### 0. 综合
+
+##### 0.1 Git 仓库更换仓库地址
+> `git remote set-url origin 新仓库的地址/新仓库名`
+>
+> 比如：
+>>
+>> `git remote set-url origin gitlab@gitlab.xxxx.com:php/chageted.git`
+
+##### 0.2 Svn 仓库更换远程地址
+> `svn sw --relocate  svn://旧地址/旧仓库名 svn://新地址/q新仓库名 --username USER_NAME --password PASSWD --no-auth-cache`
+>
+> 比如：
+>>
+>> `svn sw --relocate  svn://192.168.104.121/test svn://192.126.104.112/test_A --username test --password test1235 --no-auth-cache`
+
 #### 1. Linux
 
 ##### 1.1 Git 获取 2019 年所有的分支名称
