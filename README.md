@@ -27,6 +27,11 @@
 >
 > 如题，详情见：[system_check_env.sh](/001_linux/system_check_env.sh)
 
+#### 1.4 安装 GCC
+> 安装 GCC，本次版本为 `gcc 9.2.0`
+>
+> 如题，详情见：[install_gcc.sh](/001_linux/install_gcc.sh)
+
 ### 2. MacOs
 > 记录 MacOs 相关的工具和配置。
 #### 2.1 [spacemacs](http://spacemacs.org/)（[Emacs](https://www.gnu.org/software/emacs/)） 的 evil 模式配置
