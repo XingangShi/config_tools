@@ -69,11 +69,13 @@
 >>
 >> 更多参考：[Dos2Unix / Unix2Dos - Text file format converters](https://waterlan.home.xs4all.nl/dos2unix.html)
 
-
 ##### 1.5 [lrzsz](https://www.ohse.de/uwe/software/lrzsz.html) 在 linux 里可代替 ftp 上传和下载
 > `rz` 和 `sz` 命令安装
 >
 > `$yum install lrzsz`
+
+##### 1.6 `sed` 替换文件内容并重定向到指定文件
+> `sed 's/is_release_mode = False/is_release_mode = True/g' config.py >config_release.py`
 
 #### 2. MacOs
 ##### 2.1
