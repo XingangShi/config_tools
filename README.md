@@ -88,7 +88,7 @@
 
 #### 6. [Gists 备份](https://gist.github.com/xingangshi)
 
-##### 6.1 [python3 installer](/000_gists_bak/vim_install.sh)
+##### 6.1 [python3 installer](/000_gists_bak/python3_install.sh)
 
 ##### 6.2 [cmake get os info](/000_gists_bak/cmake_get_os_info.cmake)
 
@@ -100,6 +100,7 @@
 
 ##### 6.6 [pypy vs py2 vs py3](/000_gists_bak/pypy_vs_py2_vs_py3)
 > [test_pypy.py](/000_gists_bak/pypy_vs_py2_vs_py3/test_pypy.py)
+>
 > [run_test.sh](/000_gists_bak/pypy_vs_py2_vs_py3/run_test.sh)
 
 ##### 6.7 [xcode vim plugin installer](/000_gists_bak/xvim2_installer.sh)
