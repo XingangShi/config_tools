@@ -1,0 +1,36 @@
+# *    *    *    *    *  command to be executed
+# ┬    ┬    ┬    ┬    ┬
+# │    │    │    │    │
+# │    │    │    │    │
+# │    │    │    │    └───── day of week (0 - 7) (0 or 7 are Sunday, or use names)
+# │    │    │    └────────── month (1 - 12)
+# │    │    └─────────────── day of month (1 - 31)
+# │    └──────────────────── hour (0 - 23)
+# └───────────────────────── min (0 - 59)
+
+# 15 minute snapshots, taken every 15 minute, keep for 8 hours
+*/15 * * * * /usr/local/bin/stasis snapshot -s tank/pii/Dropbox -p 15min >> /tmp/stasis.log 2>&1
+1,16,31,46  * * * * /usr/local/bin/stasis clean -p 15min -m "8 hours" >> /tmp/stasis.log 2>&1
+
+# Hourly snapshots, taken each hour at NN:00, keep for 7 days
+0 * * * * /usr/local/bin/stasis snapshot -s tank/pii -p hourly >> /tmp/stasis.log 2>&1
+0 * * * * /usr/local/bin/stasis snapshot -s tank/pii/Dropbox -p hourly >> /tmp/stasis.log 2>&1
+1 * * * * /usr/local/bin/stasis clean -p hourly -m "7 days" >> /tmp/stasis.log 2>&1
+
+# Daily snapshots, taken each day at 00:00, keep for 14 days
+0 0 * * * /usr/local/bin/stasis snapshot -s tank/pii -p daily >> /tmp/stasis.log 2>&1
+0 0 * * * /usr/local/bin/stasis snapshot -s tank/pii/Dropbox -p daily >> /tmp/stasis.log 2>&1
+0 0 * * * /usr/local/bin/stasis snapshot -s tank/pii/Music -p daily >> /tmp/stasis.log 2>&1
+1 0 * * * /usr/local/bin/stasis clean -p daily -m "14 days" >> /tmp/stasis.log 2>&1
+
+# Weekly snapshots, taken each monday at 00:00, keep for 1 month
+0 0 * * 0 /usr/local/bin/stasis snapshot -s tank/pii -p weekly >> /tmp/stasis.log 2>&1
+0 0 * * 0 /usr/local/bin/stasis snapshot -s tank/pii/Dropbox -p weekly >> /tmp/stasis.log 2>&1
+0 0 * * 0 /usr/local/bin/stasis snapshot -s tank/pii/Music -p weekly >> /tmp/stasis.log 2>&1
+1 0 * * 0 /usr/local/bin/stasis clean -p weekly -m "1 month" >> /tmp/stasis.log 2>&1
+
+# Monthly snapshots, taken 1st day of month at 00:00, keep for 1 year
+0 0 1 * * /usr/local/bin/stasis snapshot -s tank/pii -p monthly >> /tmp/stasis.log 2>&1
+0 0 1 * * /usr/local/bin/stasis snapshot -s tank/pii/Dropbox -p monthly >> /tmp/stasis.log 2>&1
+0 0 1 * * /usr/local/bin/stasis snapshot -s tank/pii/Music -p monthly >> /tmp/stasis.log 2>&1
+1 0 1 * * /usr/local/bin/stasis clean -p monthly -m "1 year" >> /tmp/stasis.log 2>&1

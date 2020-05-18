@@ -86,3 +86,20 @@
 >
 > 请见请链接：[005_reveal-md-for_md_ppt_show](/005_reveal-md-for_md_ppt_show)。
 
+#### 6. [Gists 备份](https://gist.github.com/xingangshi)
+
+##### 6.1 [python3 installer](/000_gists_bak/vim_install.sh)
+
+##### 6.2 [cmake get os info](/000_gists_bak/cmake_get_os_info.cmake)
+
+##### 6.3 [cron snapshots](/000_gists_bak/cron_info.txt)
+
+##### 6.4 [nodejs req vs resp with error info](/000_gists_bak/nodejs_req_vs_res.js)
+
+##### 6.5 [vim installer](/000_gists_bak/vim_install.sh)
+
+##### 6.6 [pypy vs py2 vs py3](/000_gists_bak/pypy_vs_py2_vs_py3)
+> [test_pypy.py](/000_gists_bak/pypy_vs_py2_vs_py3/test_pypy.py)
+> [run_test.sh](/000_gists_bak/pypy_vs_py2_vs_py3/run_test.sh)
+
+##### 6.7 [xcode vim plugin installer](/000_gists_bak/xvim2_installer.sh)
