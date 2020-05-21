@@ -104,3 +104,7 @@
 > [run_test.sh](/000_gists_bak/pypy_vs_py2_vs_py3/run_test.sh)
 
 ##### 6.7 [xcode vim plugin installer](/000_gists_bak/xvim2_installer.sh)
+
+##### 6.8 [a simple dict installer](/000_gists_bak/abc_dict_install.sh)
+> [A simple one hundred thousand dict install for using by local](/000_gists_bak/abc_dict_install.sh)
+
