@@ -8,6 +8,8 @@
 >
 > 如题，详情见：[awesome_commnd_tips.md](/awesome_commnd_tips.md)
 
+### 0. 杂项
+#### 0.1 [Termux 技巧汇总](/006_termux/termux_skills.md)
 
 ### 1. Linux
 > 记录 Linux 相关的工具和配置。
@@ -20,7 +22,6 @@
 > Shell 不止是黑白分明，也可以多姿多彩。
 >
 > 如题，详情见：[output_color_syntax.sh](/001_linux/output_color_syntax.sh)
-
 
 #### 1.3 检查一些软件是否安装
 > 检查系统是否安装一些软件。
@@ -108,3 +109,5 @@
 ##### 6.8 [a simple dict installer](/000_gists_bak/abc_dict_install.sh)
 > [A simple one hundred thousand dict install for using by local](/000_gists_bak/abc_dict_install.sh)
 
+##### 6.9 [delete all weibo](/000_gists_bak/delete_weibo_poster.js)
+> [delete all weibo you post](/000_gists_bak/delete_weibo_poster.js)
