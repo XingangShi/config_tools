@@ -111,3 +111,9 @@
 
 ##### 6.9 [delete all weibo](/000_gists_bak/delete_weibo_poster.js)
 > [delete all weibo you post](/000_gists_bak/delete_weibo_poster.js)
+
+##### 6.10 [termux android keyboard](/000_gists_bak/termux.properties)
+> [termux for andriod keyboard setting](/000_gists_bak/termux.properties)
+
+##### 6.11 [generate a qdcode by terminal](/000_gists_bak/generate_qrenco.sh)
+> [genarete a qrcode for every things](/000_gists_bak/generate_qrenco.sh)
