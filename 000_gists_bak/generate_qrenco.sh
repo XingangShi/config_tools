@@ -1,4 +1,5 @@
-	#!/usr/bin/bash
+#!/usr/bin/bash
+
 echo $1 |curl -F-=\<- qrenco.de
 
 # Sanple:
