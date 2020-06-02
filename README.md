@@ -33,6 +33,10 @@
 >
 > 如题，详情见：[install_gcc.sh](/001_linux/install_gcc.sh)
 
+#### 1.5 tmux 配置文件一份
+>
+> 如题，详情见：[tmux.conf](/001_linux/tmux.conf)
+
 ### 2. MacOs
 > 记录 MacOs 相关的工具和配置。
 #### 2.1 [spacemacs](http://spacemacs.org/)（[Emacs](https://www.gnu.org/software/emacs/)） 的 evil 模式配置
