@@ -121,3 +121,6 @@
 
 ##### 6.11 [generate a qdcode by terminal](/000_gists_bak/generate_qrenco.sh)
 > [genarete a qrcode for every things](/000_gists_bak/generate_qrenco.sh)
+
+##### 6.12 [terminal python print color](/000_gists_bak/colorprint.py)
+> [a new print function for python to print color in terminal](/000_gists_bak/colorprint.py)
