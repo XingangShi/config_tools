@@ -124,3 +124,6 @@
 
 ##### 6.12 [terminal python print color](/000_gists_bak/colorprint.py)
 > [a new print function for python to print color in terminal](/000_gists_bak/colorprint.py)
+
+##### 6.13 [Env for oh-my-zsh](/000_gists_bak/init_oh-my-zsh.sh)
+> [init my self oh-my-zsh for debian](/000_gists_bak/init_oh-my-zsh.sh)
