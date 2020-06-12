@@ -36,7 +36,7 @@ deb-src http://mirrors.163.com/debian-security/ jessie/updates main non-free con
 
 
 #### Debian 8 - 9
-**操作步骤和  [Debian 7 - 8][/Debian 7 - 8] 几乎一样，只是需要替换不同的源，也就是之改变中的 2、3 步骤。**
+**操作步骤和  [Debian 7 - 8](#debian-7---8) 几乎一样，只是需要替换不同的源，也就是之改变中的 2、3 步骤。**
 
 ##### 2. 切换源到 Debian9
 > `$ sed -i 's/jessie/Stretch/g' /etc/apt/sources.list`
@@ -55,7 +55,7 @@ deb-src http://mirrors.163.com/debian-security/ stretch/updates main non-free co
 ```
 
 #### Debian 9 - 10
-**操作步骤和  [Debian 7 - 8][/Debian 7 - 8] 几乎一样，只是需要替换不同的源，也就是之改变中的 2、3 步骤。**
+**操作步骤和  [Debian 7 - 8](#debian-7---8) 几乎一样，只是需要替换不同的源，也就是之改变中的 2、3 步骤。**
 ##### 2. 切换源到 Debian10
 > `$ sed -i 's/stretch/buster/g' /etc/apt/sources.list`
 
