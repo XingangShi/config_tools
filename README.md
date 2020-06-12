@@ -10,6 +10,7 @@
 
 ### 0. 杂项
 #### 0.1 [Termux 技巧汇总](/006_termux/termux_skills.md)
+#### 0.2 [Debian 系统升级 7 - 10](/001_linux/debian_update.md)
 
 ### 1. Linux
 > 记录 Linux 相关的工具和配置。
