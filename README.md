@@ -38,6 +38,19 @@
 >
 > 如题，详情见：[tmux.conf](/001_linux/tmux.conf)
 
+#### 1.6 `zsh : command not found pip3` 的解决方案
+```bash
+$ sudo apt-get install --reinstall python3-pip
+$ pip3 -V
+$ pip3 install --upgrade pip
+$ pip --version
+```
+
+#### 1.7 [Mycli](https://github.com/dbcli/mycli) 使用时报错 `The 'prompt_toolkit<3.0.0,>=2.0.6' distribution was not`
+```bash
+$ pip3 install 'prompt-toolkit==2.0.8'
+```
+
 ### 2. MacOs
 > 记录 MacOs 相关的工具和配置。
 #### 2.1 [spacemacs](http://spacemacs.org/)（[Emacs](https://www.gnu.org/software/emacs/)） 的 evil 模式配置
