@@ -95,6 +95,17 @@ $ pip3 install 'prompt-toolkit==2.0.8'
 >
 >> 在系统变量加入 `PYTHONIOENCODING`，值填写：`utf-8`。
 
+#### 3.7 Win10、linux SCP 拷贝文件
+**需要注意 windows 下的文件路径 `/d:/`**
+> 从 linux 系统复制文件到 windows 系统：
+```bash
+$ scp /oracle/a.txt  administrator@192.168.3.181:/d:/
+```
+> 在 linux 环境下，将 windows 下的文件复制到 linux 系统中：
+```bash
+$ scp administrator@192.168.3.181:/d:/test/config.ips  /oracle
+```
+
 ### 4. 迁移博客中的第三方图床的图片到本地化
 > 由于之前使用的两个图床 ： [Imgur](https://i.imgur.com)（国内访问不稳定） 和 新浪图床（不允许第三方平台调用），所以打算把博客两个图床的图片全部爬下来，迁移到 github。
 >
