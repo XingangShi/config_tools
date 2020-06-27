@@ -106,6 +106,12 @@ $ scp /oracle/a.txt  administrator@192.168.3.181:/d:/
 $ scp administrator@192.168.3.181:/d:/test/config.ips  /oracle
 ```
 
+#### 3.8 git status 显示中文和解决中文乱码
+**原因：在默认设置下，中文文件名在工作区状态输出，中文名不能正确显示，而是显示为八进制的字符编码。**
+```bash
+$ git config --global core.quotepath false
+```
+
 ### 4. 迁移博客中的第三方图床的图片到本地化
 > 由于之前使用的两个图床 ： [Imgur](https://i.imgur.com)（国内访问不稳定） 和 新浪图床（不允许第三方平台调用），所以打算把博客两个图床的图片全部爬下来，迁移到 github。
 >
