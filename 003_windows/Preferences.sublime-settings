@@ -4,22 +4,24 @@
 //
 //
 {
+	"always_prompt_for_file_reload": false,
+	"always_show_minimap_viewport": true,
+	"auto_close_tags": true,
 	"auto_complete": true,
 	"auto_complete_commit_on_tab": true,
 	"auto_complete_delay": 50,
-	"auto_complete_size_limit": 4194304,
 	"auto_complete_selector": "source - comment, meta.tag - punctuation.definition.tag.begin",
+	"auto_complete_size_limit": 4194304,
 	"auto_complete_triggers":
 	[
 		{
 			"characters": "<",
-			"selector": "text.html",
+			"selector": "text.html"
 		}
 	],
 	"auto_complete_with_fields": false,
 	"auto_indent": true,
 	"auto_match_enabled": true,
-	"auto_close_tags": true,
 	"binary_file_patterns":
 	[
 		"*.jpg",
@@ -39,8 +41,9 @@
 	"caret_style": "smooth",
 	"close_windows_when_empty": true,
 	"color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
+	"copy_with_empty_selection": true,
 	"default_encoding": "UTF-8",
-	"default_line_ending": "system",
+	"default_line_ending": "unix",
 	"detect_indentation": true,
 	"dictionary": "Packages/Language – English/en_US.dic",
 	"draw_centered": false,
@@ -48,6 +51,7 @@
 	"draw_minimap_border": true,
 	"draw_white_space": "selection",
 	"enable_hexadecimal_encoding": true,
+	"enable_telemetry": "auto",
 	"ensure_newline_at_eof_on_save": true,
 	"fallback_encoding": "Western (Windows 1252)",
 	"file_exclude_patterns":
@@ -86,14 +90,17 @@
 	"font_options":
 	[
 		"no_italic"
+		"no_bold",
+		"gray_antialias",
+		"gdi",
+		"subpixel_antialias"
 	],
-	"font_size": 9,
+	"font_size": 10,
 	"highlight_line": false,
 	"hot_exit": false,
 	"ignored_packages":
 	[
-		"Package Control",
-		//"Vintage"
+		"Package Control"
 	],
 	"indent_guide_options":
 	[
@@ -101,6 +108,7 @@
 	],
 	"indent_subsequent_lines": false,
 	"indent_to_bracket": true,
+	"index_files": true,
 	"line_numbers": true,
 	"line_padding_bottom": 0,
 	"line_padding_top": 0,
@@ -123,10 +131,12 @@
 	"scroll_past_end": true,
 	"scroll_speed": 1.0,
 	"shift_tab_unindent": true,
+	"show_full_path": true,
 	"show_tab_close_buttons": true,
 	"spell_check": false,
 	"tab_completion": true,
 	"tab_size": 4,
+	"theme": "Default.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"tree_animation_enabled": false,
 	"trim_automatic_white_space": true,
@@ -136,12 +146,5 @@
 	"use_tab_stops": true,
 	"word_separators": "./\\()\"`-:,.;<>~!@#$%^&*|+=[]{}`~?",
 	"word_wrap": false,
-	"wrap_width": 120,
-	"default_line_ending": "unix",
-	"always_show_minimap_viewport": true,
-	"copy_with_empty_selection": true,
-	"always_prompt_for_file_reload": false,
-	"show_full_path": true,
-	"index_files": true,
-	"enable_telemetry" : "auto"
+	"wrap_width": 120
 }
