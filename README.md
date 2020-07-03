@@ -51,6 +51,23 @@ $ pip --version
 $ pip3 install 'prompt-toolkit==2.0.8'
 ```
 
+##### 1.8 Linux 命令 find 参数 atime、ctime、mtime 解释
+```bash
+# find  -[atime|ctime|mtime] [n|+n|-n]
+#
+# atime 是指 access time，文件被读取或者执行的时间，修改文件是不会改变 access time 的。
+# ctime 是指 change time，文件状态改变时间，指文件的 i 结点被修改的时间，如通过 chmod 修改文件属性，ctime 就会被修改。
+# mtime 是指 modify time，指文件内容被修改的时间。
+#
+# find . –ctime n  #最后一次修改发生在距离当前时间 n*24 小时至 (n+1)*24 小时
+# find . –ctime +n #最后一次修改发生在 n+1 天以前，距离当前时间为 (n+1)*24 小时或者更早
+# find . –ctime –n #最后一次修改发生在 n 天以内，距离当前时间为 n*24 小时以内
+if [[ -d "./backup_log" ]]; then
+    # 删除 30 天以前的 备份日志
+    find ./backup_log -maxdepth 1 -type d -ctime +30 -exec rm -rf {} \;
+fi
+```
+
 ### 2. MacOs
 > 记录 MacOs 相关的工具和配置。
 #### 2.1 [spacemacs](http://spacemacs.org/)（[Emacs](https://www.gnu.org/software/emacs/)） 的 evil 模式配置
