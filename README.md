@@ -175,3 +175,6 @@ $ git config --global core.quotepath false
 
 ##### 6.13 [Env for oh-my-zsh](/000_gists_bak/init_oh-my-zsh.sh)
 > [init my self oh-my-zsh for debian](/000_gists_bak/init_oh-my-zsh.sh)
+
+##### 6.14 [Generate post api args](/000_gists_bak/geneate_post_args.py)
+> [generate all args for post api using hmac and md5](/000_gists_bak/geneate_post_args.py)
