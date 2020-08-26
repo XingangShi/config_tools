@@ -129,6 +129,16 @@ $ scp administrator@192.168.3.181:/d:/test/config.ips  /oracle
 $ git config --global core.quotepath false
 ```
 
+#### 3.9 解决 Windows 文件在 WSL 最高权限
+> 问题描述：在遇到 WSL 在 Windows 环境中拥有 777 最高权限，想通过`chmod 600 file_path` 修改权限时，修改无效。
+>
+> 解决办法：卸载文件所在挂载盘并以 `drvfs` 文件系统 `metadata` 标志重新挂在一次即可，操作如下：
+```bash
+$ sudo umount /mnt/e
+$ sudo mount -t drvfs E: /mnt/e -o metadata
+$ sudo chmod 600 /mnt/e/file_path
+```
+
 ### 4. 迁移博客中的第三方图床的图片到本地化
 > 由于之前使用的两个图床 ： [Imgur](https://i.imgur.com)（国内访问不稳定） 和 新浪图床（不允许第三方平台调用），所以打算把博客两个图床的图片全部爬下来，迁移到 github。
 >
