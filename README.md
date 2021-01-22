@@ -188,3 +188,9 @@ $ sudo chmod 600 /mnt/e/file_path
 
 ##### 6.14 [Generate post api args](/000_gists_bak/geneate_post_args.py)
 > [generate all args for post api using hmac and md5](/000_gists_bak/geneate_post_args.py)
+
+##### 6.15 [获取微博热搜及筛选](/000_gists_bak/get_weibo_tops.sh)
+> [获取新浪微博热搜并筛选自己感兴趣的话题](/000_gists_bak/get_weibo_tops.sh)
+
+##### 6.16 [Installer for googler](/000_gists_bak/install_googler.sh)
+> [googler installer](/000_gists_bak/install_googler.sh)
