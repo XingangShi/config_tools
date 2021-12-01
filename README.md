@@ -194,3 +194,6 @@ $ sudo chmod 600 /mnt/e/file_path
 
 ##### 6.16 [Installer for googler](/000_gists_bak/install_googler.sh)
 > [googler installer](/000_gists_bak/install_googler.sh)
+
+##### 6.17 [Get all server tables of dbs which more bigger](/000_gists_bak/get_db_tables_info.sql)
+> [Get all server tables of dbs which more bigger](/000_gists_bak/get_db_tables_info.sql)
