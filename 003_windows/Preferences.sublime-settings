@@ -3,7 +3,10 @@
 // 路径：E:\Program Files (x86)\Sublime_Text_3\Data\Packages\User
 //
 //
+// Settings in here override those in "Default/Preferences.sublime-settings",
+// and are overridden in turn by syntax-specific settings.
 {
+	"update_check":false,
 	"always_prompt_for_file_reload": false,
 	"always_show_minimap_viewport": true,
 	"auto_close_tags": true,
@@ -86,16 +89,16 @@
 		".hg",
 		"CVS"
 	],
-	"font_face": "Consolas",
+	"font_face": "Sarasa Mono SC",
 	"font_options":
 	[
-		"no_italic"
+		"no_italic",
 		"no_bold",
 		"gray_antialias",
 		"gdi",
 		"subpixel_antialias"
 	],
-	"font_size": 10,
+	"font_size": 13,
 	"highlight_line": false,
 	"hot_exit": false,
 	"ignored_packages":
