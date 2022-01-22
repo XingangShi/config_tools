@@ -1,31 +1,35 @@
-### 自己用过的命令行的集锦，温故知新
+## 自己用过的命令行的集锦，温故知新
 
 ---
 
-#### 0. 综合
+### 0. 综合
 
-##### 0.1 Git 仓库更换仓库地址
+#### 0.1 Git 仓库更换仓库地址
+
 > `git remote set-url origin 新仓库的地址/新仓库名`
 >
 > 比如：
 >>
 >> `git remote set-url origin gitlab@gitlab.xxxx.com:php/chageted.git`
 
-##### 0.2 Svn 仓库更换远程地址
+#### 0.2 Svn 仓库更换远程地址
+
 > `svn sw --relocate  svn://旧地址/旧仓库名 svn://新地址/q新仓库名 --username USER_NAME --password PASSWD --no-auth-cache`
 >
 > 比如：
 >>
 >> `svn sw --relocate  svn://192.168.104.121/test svn://192.126.104.112/test_A --username test --password test1235 --no-auth-cache`
 
-#### 1. Linux
+### 1. Linux
 
-##### 1.1 Git 获取 2019 年所有的分支名称
+#### 1.1 Git 获取 2019 年所有的分支名称
+
 > Git 基于 GitFlow 的分制管理，获取分支信息，并从近到远排序。
 >
 > `$git branch -r | grep "v_2019" | awk -F/ '{print $2"/"$3}' | sort -r -f`
 
-##### 1.2 pip 安装不使用缓存
+#### 1.2 pip 安装不使用缓存
+
 > 自己写 pip 库时，有时候刚发布版本，会发现测试安装时还是使用旧的版本。
 >
 > 1. 使用参数 `--no-cache-dir` 参数
@@ -38,12 +42,14 @@
 >>
 >> 2.3 Windows `%LocalAppData%\pip\Cache`
 
-##### 1.3 Linux 创建用户和删除用户
+#### 1.3 Linux 创建用户和删除用户
+
 > 创建用户用 `adduser` 不要用 `useradd`，删除用户用 `userdel`。
 >
 > **因为 `adduser` 会创建家目录，是一个 perl 写的交互式的创建用户，`useradd` 是个裸命令，创建的用户其实啥都干不了。**
 
-##### 1.4 批量转换文件换行符
+#### 1.4 批量转换文件换行符
+
 > 1. `$ find . -name "*.py" | xargs dos2unix`
 >
 > 2. `$ find . -name "*.sh" -exec dos2unix {} \;`
@@ -59,7 +65,8 @@
 >>>
 >>> 1. 命令行安装 `$ yum -y install dos2unix* unix2dos*`
 >>>
->>  2. 安装包安装
+>>> 2. 安装包安装
+>>>
 >>> `$ wget http://terminus.sk/~hany/_data/hd2u/hd2u-1.0.3.tgz`
 >>> `$ tar -xvf hd2u-1.0.3.tgz && cd hd2u-1.0.3`
 >>> `$ ./configure && make && make install`
@@ -69,19 +76,24 @@
 >>
 >> 更多参考：[Dos2Unix / Unix2Dos - Text file format converters](https://waterlan.home.xs4all.nl/dos2unix.html)
 
-##### 1.5 [lrzsz](https://www.ohse.de/uwe/software/lrzsz.html) 在 linux 里可代替 ftp 上传和下载
+#### 1.5 [lrzsz](https://www.ohse.de/uwe/software/lrzsz.html) 在 linux 里可代替 ftp 上传和下载
+
 > `rz` 和 `sz` 命令安装
 >
 > `$yum install lrzsz`
 
-##### 1.6 `sed` 替换文件内容并重定向到指定文件
+#### 1.6 `sed` 替换文件内容并重定向到指定文件
+
 > `sed 's/is_release_mode = False/is_release_mode = True/g' config.py >config_release.py`
 
-#### 2. MacOs
-##### 2.1
+### 2. MacOs
 
-#### 3. Windows
-##### 3.1 Pageant 加载指定的 PPK 公钥
+#### 2.1
+
+### 3. Windows
+
+#### 3.1 Pageant 加载指定的 PPK 公钥
+
 > Pageant 是 TortoiseGit 中负责和服务端验证，通过加载公钥 ppk 来完成验证。
 >
 ```Pyhton
@@ -95,14 +107,19 @@ taskkill /f /t /im pageant.exe
 exit
 ```
 
-##### 3.2 GUI for Windows（MINGW64）加载指定秘钥
+#### 3.2 GUI for Windows（MINGW64）加载指定秘钥
+
 > 步骤：
+>
 >> 1. 启动 GUI 的命令行终端；
+>>
 >> 2. 打开代理 shh-agent 代理；
+>>
 >> 3. 添加授权过秘钥。
+>>
 >> 4. 卸载秘钥。
 
-```
+```bash
 GeekPanshi MINGW64 /e/for_shard
 $ eval "$(ssh-agent -s)"
 Agent pid 2498
@@ -119,9 +136,10 @@ unset SSH_AGENT_PID;
 echo Agent pid 2498 killed;
 ```
 
-##### 3.3 pip 软件更新
-```
-$ python -m pip install --upgrade pip -i https://pypi.douban.com/simple
-$ pip install XXXX
-$ pyhton -m pip install XXXX
+#### 3.3 pip 软件更新
+
+```bash
+python -m pip install --upgrade pip -i https://pypi.douban.com/simple
+pip install XXXX
+pyhton -m pip install XXXX
 ```
