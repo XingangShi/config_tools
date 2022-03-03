@@ -244,6 +244,10 @@ sudo chmod 600 /mnt/e/file_path
 
 > [Get all server tables of dbs which more bigger](/000_gists_bak/get_db_tables_info.sql)
 
-##### 6.18 [Merlin's Wisdom Project (Draft)](/000_gists_bak/merlin-wisdom_project)
+##### 6.18 [Merlin's Wisdom Project (Draft)](/000_gists_bak/merlin-wisdom_project/wisdom.md)
 
-> [Merlin's Wisdom Project (Draft)](/000_gists_bak/merlin-wisdom_project)
+> [Merlin's Wisdom Project (Draft)](/000_gists_bak/merlin-wisdom_project/wisdom.md)
+
+##### 6.19 [如何删除 git 历史中的大文件或敏感信息](/000_gists_bak/delete_large_file_in_git_histotry.md)
+
+> [如何删除 git 历史中的大文件或敏感信息](/000_gists_bak/delete_large_file_in_git_histotry.md)
