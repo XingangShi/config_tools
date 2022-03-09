@@ -20,7 +20,7 @@ Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-L
 
 5. 卸载子系统：`wsl --unregister Debian`。
 
-### 安装子系统到非 C 盘
+#### 安装子系统到非 C 盘
 
 （以 Debian 为例，下载文件为：`TheDebianProject.DebianGNULinux_1.12.1.0.AppxBundle`）
 
@@ -36,6 +36,10 @@ Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-L
 
 5. PowerShell 设置登录默认用户名：`debian config --default-user panshi`。
 
+#### wsl 下安装 [vscode](https://code.visualstudio.com/)
+
+在 Windows 下安装了 vscode 的前提下，在 wsl 下直接命令行输入 `code .` 就可以安装 vscode。
+
 ### 更新 debian 源，更新系统
 
 #### 升级到 debian 10
@@ -49,7 +53,6 @@ deb http://mirrors.163.com/debian/ buster main non-free contrib
 deb http://mirrors.163.com/debian/ buster-updates main non-free contrib
 deb http://mirrors.163.com/debian/ buster-backports main non-free contrib
 deb http://mirrors.163.com/debian-security/ buster/updates main non-free contrib
-
 deb-src http://mirrors.163.com/debian/ buster main non-free contrib
 deb-src http://mirrors.163.com/debian/ buster-updates main non-free contrib
 deb-src http://mirrors.163.com/debian/ buster-backports main non-free contrib
@@ -66,12 +69,12 @@ sudo vi /etc/apt/sources.list
 修改内容为
 """
 deb http://mirrors.163.com/debian/ bullseye main non-free contrib
-deb-src http://mirrors.163.com/debian/ bullseye main non-free contrib
 deb http://mirrors.163.com/debian-security/ bullseye-security main
-deb-src http://mirrors.163.com/debian-security/ bullseye-security main
 deb http://mirrors.163.com/debian/ bullseye-updates main non-free contrib
-deb-src http://mirrors.163.com/debian/ bullseye-updates main non-free contrib
 deb http://mirrors.163.com/debian/ bullseye-backports main non-free contrib
+deb-src http://mirrors.163.com/debian/ bullseye main non-free contrib
+deb-src http://mirrors.163.com/debian-security/ bullseye-security main
+deb-src http://mirrors.163.com/debian/ bullseye-updates main non-free contrib
 deb-src http://mirrors.163.com/debian/ bullseye-backports main non-free contrib
 """
 
@@ -86,7 +89,6 @@ sudo apt install -y git cmake python3-dev python2-dev wget curl build-essential
 
 # install language
 sudo apt install -y python2 python3 golang g++ gcc rustc nodejs npm default-jdk
-
 ```
 
 ### 安装 `vim`
@@ -96,7 +98,11 @@ sudo apt install vim-gtk3 -y
 sudo apt install vim -y
 vim --version
 
-sudo git clone https://github.com/XingangShi/vim_installer.git && cd vim_installer && bash setup.sh && cd - && sudo rm -rf vim_installer
+git clone https://github.com/XingangShi/vim_installer.git && cd vim_installer && bash setup.sh && cd - && sudo rm -rf vim_installer
+
+vim ~/.vimrc ，打开 39、40 行关于 `YouCompleteMe` 的设置， 需要安装 `YouCompleteMe`。
+
+打开 vim，输入 `:PluginInstall`，安装 `.vimrc` 配置的 vim 插件，安装完后 `:qa` 退出 vim。
 
 cd ~/.vim/bundle/YouCompleteMe
 
@@ -106,25 +112,20 @@ cd ~/.vim/bundle/YouCompleteMe
 ### 安装 `zsh`
 
 ```shell
-sudo apt install -y zsh
+sudo apt install -y zsh autojump
 zsh --version
-
+autojump --version
 
 git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
 cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-apt install autojump
-autojump --version
-
-
 
 echo $SHELL
 sudo chsh -s $(which zsh)
 echo $SHELL
 
-修改 ~/.zshrc
-
+修改 ~/.zshrc 第 73 行为：
 """
 plugins=(git
          zsh-autosuggestions
@@ -133,9 +134,7 @@ plugins=(git
 )
 """
 
-重启生效
-
-echo $SHELL
+重启 wsl 生效： `echo $SHELL` 。
 ```
 
 ### 安装 `emacs`
@@ -150,4 +149,23 @@ emacs
 Ctrl-x Ctrl-c
 M-x package-install RET monokai-theme RET
 Ctrl-x Ctrl-c
+vim ~/.emacs.d/init.el 注释掉第 43 行，保存退出。
+emacs
+```
+
+### 杂项
+
+#### 添加已有的 shh-keys
+
+```bash
+eval `ssh-agent`
+ssh-add /mnt/e/ssh_keys/panshi
+```
+
+#### 设置全局的 `Git merge` 规则
+
+merge (the default strategy)
+
+```bash
+git config --global pull.rebase false
 ```
