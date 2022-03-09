@@ -1,9 +1,7 @@
 #!/usr/bin/bash
 
-
 system_prefix='apt-get'
 args='-y install'
-
 
 $system_prefix update
 
@@ -18,7 +16,6 @@ $system_prefix $args vim-gtk
 $system_prefix $args git
 
 $system_prefix $args subversion
-
 
 $system_prefix $args zsh
 $system_prefix $args autojump
