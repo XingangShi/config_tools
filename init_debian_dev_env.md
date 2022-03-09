@@ -1,7 +1,14 @@
 ## 初始化 `Debian` 开发环境
 
-### 更新 debian 源，更新系统
+### wsl2 安装 `Debian`
 
+选择合适的 wsl 发行版本 [Linux distributions](https://docs.microsoft.com/en-us/windows/wsl/install-manual#downloading-distributions)
+
+#### wsl 常用命令
+
+1. 开启虚拟机支持：`Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux`
+
+### 更新 debian 源，更新系统
 
 #### 升级到 debian 10
 
