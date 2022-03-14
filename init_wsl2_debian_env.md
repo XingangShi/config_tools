@@ -85,7 +85,7 @@ sudo apt update && sudo apt upgrade -y
 
 ```shell
 # base
-sudo apt install -y git cmake python3-dev python2-dev wget curl build-essential
+sudo apt install -y git cmake python3-dev python2-dev wget curl build-essential subversion
 
 # install language
 sudo apt install -y python2 python3 golang g++ gcc rustc nodejs npm default-jdk
