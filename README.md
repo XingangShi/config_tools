@@ -184,70 +184,77 @@ sudo chmod 600 /mnt/e/file_path
 >
 > 请见请链接：[005_reveal-md-for_md_ppt_show](/005_reveal-md-for_md_ppt_show)。
 
-#### 6. [Gists 备份](https://gist.github.com/xingangshi)
+### 6. 字体
 
-##### 6.1 [python3 installer](/000_gists_bak/python3_install.sh)
+#### 6.1 等宽字体
 
-##### 6.2 [cmake get os info](/000_gists_bak/cmake_get_os_info.cmake)
+1. [Sarasa Gothic / 更纱黑体 / 更紗黑體 / 更紗ゴシック / 사라사 고딕](https://github.com/be5invis/Sarasa-Gothic)
 
-##### 6.3 [cron snapshots](/000_gists_bak/cron_info.txt)
 
-##### 6.4 [nodejs req vs resp with error info](/000_gists_bak/nodejs_req_vs_res.js)
+### N. [Gists 备份](https://gist.github.com/xingangshi)
 
-##### 6.5 [vim installer](/000_gists_bak/vim_install.sh)
+#### n.1 [python3 installer](/000_gists_bak/python3_install.sh)
 
-##### 6.6 [pypy vs py2 vs py3](/000_gists_bak/pypy_vs_py2_vs_py3)
+#### n.2 [cmake get os info](/000_gists_bak/cmake_get_os_info.cmake)
+
+#### n.3 [cron snapshots](/000_gists_bak/cron_info.txt)
+
+#### n.4 [nodejs req vs resp with error info](/000_gists_bak/nodejs_req_vs_res.js)
+
+#### n.5 [vim installer](/000_gists_bak/vim_install.sh)
+
+#### n.6 [pypy vs py2 vs py3](/000_gists_bak/pypy_vs_py2_vs_py3)
 
 > [test_pypy.py](/000_gists_bak/pypy_vs_py2_vs_py3/test_pypy.py)
 >
 > [run_test.sh](/000_gists_bak/pypy_vs_py2_vs_py3/run_test.sh)
 
-##### 6.7 [xcode vim plugin installer](/000_gists_bak/xvim2_installer.sh)
+#### n.7 [xcode vim plugin installer](/000_gists_bak/xvim2_installer.sh)
 
-##### 6.8 [a simple dict installer](/000_gists_bak/abc_dict_install.sh)
+#### n.8 [a simple dict installer](/000_gists_bak/abc_dict_install.sh)
 
 > [A simple one hundred thousand dict install for using by local](/000_gists_bak/abc_dict_install.sh)
 
-##### 6.9 [delete all weibo](/000_gists_bak/delete_weibo_poster.js)
+#### n.9 [delete all weibo](/000_gists_bak/delete_weibo_poster.js)
 
 > [delete all weibo you post](/000_gists_bak/delete_weibo_poster.js)
 
-##### 6.10 [termux android keyboard](/000_gists_bak/termux.properties)
+#### n.10 [termux android keyboard](/000_gists_bak/termux.properties)
 
 > [termux for andriod keyboard setting](/000_gists_bak/termux.properties)
 
-##### 6.11 [generate a qdcode by terminal](/000_gists_bak/generate_qrenco.sh)
+#### n.11 [generate a qdcode by terminal](/000_gists_bak/generate_qrenco.sh)
 
 > [genarete a qrcode for every things](/000_gists_bak/generate_qrenco.sh)
 
-##### 6.12 [terminal python print color](/000_gists_bak/colorprint.py)
+#### n.12 [terminal python print color](/000_gists_bak/colorprint.py)
 
 > [a new print function for python to print color in terminal](/000_gists_bak/colorprint.py)
 
-##### 6.13 [Env for oh-my-zsh](/000_gists_bak/init_oh-my-zsh.sh)
+#### n.13 [Env for oh-my-zsh](/000_gists_bak/init_oh-my-zsh.sh)
 
 > [init my self oh-my-zsh for debian](/000_gists_bak/init_oh-my-zsh.sh)
 
-##### 6.14 [Generate post api args](/000_gists_bak/geneate_post_args.py)
+#### n.14 [Generate post api args](/000_gists_bak/geneate_post_args.py)
 
 > [generate all args for post api using hmac and md5](/000_gists_bak/geneate_post_args.py)
 
-##### 6.15 [获取微博热搜及筛选](/000_gists_bak/get_weibo_tops.sh)
+#### n.15 [获取微博热搜及筛选](/000_gists_bak/get_weibo_tops.sh)
 
 > [获取新浪微博热搜并筛选自己感兴趣的话题](/000_gists_bak/get_weibo_tops.sh)
 
-##### 6.16 [Installer for googler](/000_gists_bak/install_googler.sh)
+#### n.16 [Installer for googler](/000_gists_bak/install_googler.sh)
 
 > [googler installer](/000_gists_bak/install_googler.sh)
 
-##### 6.17 [Get all server tables of dbs which more bigger](/000_gists_bak/get_db_tables_info.sql)
+#### n.17 [Get all server tables of dbs which more bigger](/000_gists_bak/get_db_tables_info.sql)
 
 > [Get all server tables of dbs which more bigger](/000_gists_bak/get_db_tables_info.sql)
 
-##### 6.18 [Merlin's Wisdom Project (Draft)](/000_gists_bak/merlin-wisdom_project/wisdom.md)
+#### n.18 [Merlin's Wisdom Project (Draft)](/000_gists_bak/merlin-wisdom_project/wisdom.md)
 
 > [Merlin's Wisdom Project (Draft)](/000_gists_bak/merlin-wisdom_project/wisdom.md)
 
-##### 6.19 [如何删除 git 历史中的大文件或敏感信息](/000_gists_bak/delete_large_file_in_git_histotry.md)
+#### n.19 [如何删除 git 历史中的大文件或敏感信息](/000_gists_bak/delete_large_file_in_git_histotry.md)
 
 > [如何删除 git 历史中的大文件或敏感信息](/000_gists_bak/delete_large_file_in_git_histotry.md)
