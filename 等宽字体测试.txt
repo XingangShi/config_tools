@@ -1,0 +1,49 @@
+# 等宽字体测试
+
+## 1. 表格对其
+
+| Precedence | Operator                               |
+|:----------:|:---------------------------------------|
+|    5       | `*`  `/`  `%` `<<`  `>>` `&`  `&^`     |
+|    4       | `+`  `-`  `\|` `^`                     |
+|    3       | `==` `!=` `<` `<=`  `>`  `>=`          |
+|    2       | `&&`                                   |
+|    1       | `\|\|`                                 |
+
+## 2. 中英文混编
+
+1234.Mono/Test.&&.end
+等宽.字/体测试.￥.end
+Hello, World & Ubuntu
+
+## 3. 数字和字母区分
+
+0O
+0o
+1l
+1L
+
+01
+Ol
+OL
+oL
+
+1 2 3 4 5 6 7 8 9
+
+a b c d e f g h i j k l m n o p q r s t u v w x y z
+A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+
+b p m f d t n l g k h j q x zh ch sh r z c s y w
+a o e i u ü
+ai ei ui ao ou iu ie üe er
+an en in un ün ang eng ing ong
+zhi chi shi ri zi ci si yi wu yu ye yue yuan yin yun ying
+
+## 4. 标点符号区分
+
+中文标点符号：
+。 ？ ！ ， 、 ； ： “” ﹃﹄ ‘’ ﹁﹂ （） ［］ 〔〕 【】 —— …… － - ～ · 《》 〈〉 ﹏﹏ ＿＿ .
+
+英文标签符号：
+. ? ! , :  … ; - – — () [] {} "" '' ' /
+
