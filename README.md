@@ -188,12 +188,17 @@ sudo chmod 600 /mnt/e/file_path
 
 [等宽字体测试文本](https://raw.githubusercontent.com/xingangshi/config_tools/master/等宽字体测试.txt)
 
-
 #### 6.1 等宽字体 - Sarasa Gothic
 
 [Sarasa Gothic / 更纱黑体 / 更紗黑體 / 更紗ゴシック / 사라사 고딕](https://github.com/be5invis/Sarasa-Gothic) 字体下载。
 
 [vscode](https://code.visualstudio.com/) 设置 `'Sarasa Mono SC' 14`。
+
+#### 6.2 等宽字体 - Noto CJK fonts
+
+Google 与 Adobe 共同推出的 Noto Serif CJK 字体：[Noto CJK fonts](https://github.com/googlefonts/noto-cjk) 字体下载。
+
+[vscode](https://code.visualstudio.com/) 设置 `'Noto Serif CJK SC' 14`。
 
 ### N. [Gists 备份](https://gist.github.com/xingangshi)
 
