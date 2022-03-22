@@ -200,6 +200,14 @@ Google 与 Adobe 共同推出的 Noto Serif CJK 字体：[Noto CJK fonts](https:
 
 [vscode](https://code.visualstudio.com/) 设置 `'Noto Serif CJK SC' 14`。
 
+#### 6.3 等宽字体 - Unifont
+
+GNU Unifont is part of the GNU Project. ：[GNU Unifont](https://unifoundry.com/unifont/) 字体下载。
+
+[标准字体链接][https://raw.githubusercontent.com/xingangshi/config_tools/master/others/unifont-14.0.02.ttf]
+
+[vscode](https://code.visualstudio.com/) 设置 `'Unifont' 14`。
+
 ### N. [Gists 备份](https://gist.github.com/xingangshi)
 
 #### n.1 [python3 installer](/000_gists_bak/python3_install.sh)
