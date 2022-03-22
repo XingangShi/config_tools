@@ -192,7 +192,9 @@ sudo chmod 600 /mnt/e/file_path
 
 [Sarasa Gothic / 更纱黑体 / 更紗黑體 / 更紗ゴシック / 사라사 고딕](https://github.com/be5invis/Sarasa-Gothic) 字体下载。
 
-[vscode](https://code.visualstudio.com/) 设置 `'Sarasa Mono SC' 14`。
+[标准字体下载链接](https://raw.githubusercontent.com/xingangshi/config_tools/master/others/sarasa-mono-sc-regular.ttf)
+
+[vscode](https://code.visualstudio.com/) 设置 `'Sarasa Mono SC' 14` 或 `'等距更纱黑体 SC' 14`。
 
 #### 6.2 等宽字体 - Noto CJK fonts
 
@@ -204,7 +206,7 @@ Google 与 Adobe 共同推出的 Noto Serif CJK 字体：[Noto CJK fonts](https:
 
 GNU Unifont is part of the GNU Project. ：[GNU Unifont](https://unifoundry.com/unifont/) 字体下载。
 
-[标准字体链接][https://raw.githubusercontent.com/xingangshi/config_tools/master/others/unifont-14.0.02.ttf]
+[标准字体下载链接](https://raw.githubusercontent.com/xingangshi/config_tools/master/others/unifont-14.0.02.ttf)
 
 [vscode](https://code.visualstudio.com/) 设置 `'Unifont' 14`。
 
