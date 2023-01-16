@@ -27,7 +27,7 @@ echo $SHELL
 sudo chsh -s $(which zsh)
 echo $SHELL
 
-git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
+git clone https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
 cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc
 compaudit | xargs chmod g-w,o-w
 
