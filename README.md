@@ -212,6 +212,21 @@ GNU Unifont is part of the GNU Project. ：[GNU Unifont](https://unifoundry.com/
 
 [vscode](https://code.visualstudio.com/) 设置 `'Unifont' 14`。
 
+### 7. 命令行登录水木社区
+
+命令行直接使用 `ssh m_username@bbs.mysmth.net` 登陆后，乱码，因为 水木社区的编码是 `gbk`，可以使用 `luit` 命令进行转码后就可以：
+
+```
+luit -encoding gbk sshpass -p m_password ssh m_username@bbs.mysmth.net
+```
+
+也可以使用 `iTerm2` 设置终端编码
+```
+1. preferences -> profiles -> +(创建一个，比如起名为 gbk-prof) -> terminal -> terminal emulation -> character encoding 配置为 gbk
+
+2. Profiles -> <刚创建的profile,如 gbk-prof> 打开一个使用对应 profile 的窗口, 执行对应命令(telnet)
+```
+
 ### N. [Gists 备份](https://gist.github.com/xingangshi)
 
 #### n.1 [python3 installer](/000_gists_bak/python3_install.sh)
