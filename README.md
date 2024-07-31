@@ -18,6 +18,13 @@
 
 #### 0.2 [Debian 系统升级 7 - 10](/001_linux/debian_update.md)
 
+#### 0.3 视频压缩命令行
+
+```
+$ ffmpeg -i input.mp4 -vcodec h264 -acodec mp2 output.mp4
+$ ffmpeg -i input.mp4 -c:v libx264 -tag:v avc1 -movflags faststart -crf 30 -preset superfast output.mp4
+```
+
 ### 1. Linux
 
 > 记录 Linux 相关的工具和配置。
