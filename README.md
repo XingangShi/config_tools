@@ -27,7 +27,7 @@ $ ffmpeg -i input.mp4 -vcodec h264 -acodec mp2 output.mp4
 $ ffmpeg -i input.mp4 -c:v libx264 -tag:v avc1 -movflags faststart -crf 30 -preset superfast output.mp4
 ```
 
-[相关在线工具](https://t.co/hF2GlSquGG)，[完整链接](https://tools.rotato.app/compress)。
+[相关在线工具](https://s.900820.xyz/spys)，[完整链接](https://tools.rotato.app/compress)。
 
 ### 1. Linux
 
