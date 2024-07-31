@@ -18,12 +18,16 @@
 
 #### 0.2 [Debian 系统升级 7 - 10](/001_linux/debian_update.md)
 
-#### 0.3 视频压缩命令行
+#### 0.3 [视频压缩命令行](https://tools.rotato.app/compress)
+
+命令行版本
 
 ```
 $ ffmpeg -i input.mp4 -vcodec h264 -acodec mp2 output.mp4
 $ ffmpeg -i input.mp4 -c:v libx264 -tag:v avc1 -movflags faststart -crf 30 -preset superfast output.mp4
 ```
+
+[相关在线工具](https://t.co/hF2GlSquGG)，[完整链接](https://tools.rotato.app/compress)。
 
 ### 1. Linux
 
