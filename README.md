@@ -27,11 +27,15 @@ $ ffmpeg -i input.mp4 -vcodec h264 -acodec mp2 output.mp4
 $ ffmpeg -i input.mp4 -c:v libx264 -tag:v avc1 -movflags faststart -crf 30 -preset superfast output.mp4
 ```
 
+[相关在线工具](https://s.900820.xyz/spys)，[完整链接](https://tools.rotato.app/compress)。
+
 #### 0.4 [Beancount](https://github.com/beancount/beancount) 中文账户时报错
+
+在使用 [fava](https://github.com/beancount/fava) 作为网页端浏览 [Beancount](https://github.com/beancount/beancount) 记账信息时，
 
 Beancount 可以设置账户类型为中文，比如：
 `1900-01-01 open 资产:银行卡:招商银行       CNY  ; 招商银行`
-但是，使用时，会提示账户错误信息 `Invalid account name: 资产:银行卡:招商银行`
+但是，fava 端通过网页浏览信息时，会提示账户错误信息 `Invalid account name: 资产:银行卡:招商银行`
 
 
 可以通过修改以下代码解决，以 `macOS` 为例子
@@ -60,8 +64,6 @@ def account(self, filename, lineno, account):
     # fair bit because these strings are repeated liberally.
     return self.accounts.setdefault(account, account)
 ```
-
-[相关在线工具](https://s.900820.xyz/spys)，[完整链接](https://tools.rotato.app/compress)。
 
 ### 1. Linux
 
