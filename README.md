@@ -27,6 +27,40 @@ $ ffmpeg -i input.mp4 -vcodec h264 -acodec mp2 output.mp4
 $ ffmpeg -i input.mp4 -c:v libx264 -tag:v avc1 -movflags faststart -crf 30 -preset superfast output.mp4
 ```
 
+#### 0.4 [Beancount](https://github.com/beancount/beancount) 中文账户时报错
+
+Beancount 可以设置账户类型为中文，比如：
+`1900-01-01 open 资产:银行卡:招商银行       CNY  ; 招商银行`
+但是，使用时，会提示账户错误信息 `Invalid account name: 资产:银行卡:招商银行`
+
+
+可以通过修改以下代码解决，以 `macOS` 为例子
+打开文件 `/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/beancount/parser/grammar.py`
+
+``` python
+修改函数 account，屏蔽掉账户类型报错信息
+
+def account(self, filename, lineno, account):
+    """Check account name validity.
+    Args:
+      account: a str, the account name.
+    Returns:
+      A string, the account name.
+    """
+
+    # start 屏蔽使用中文账户时，会提示错误：账户信息错误提示
+    #if not self.account_regexp.match(account):
+    #    meta = new_metadata(filename, lineno)
+    #    self.errors.append(
+    #        ParserError(meta, "Invalid account name: {}".format(account), None)
+    #    )
+    #end 屏蔽使用中文账户时，会提示错误：账户信息错误提示
+
+    # Intern account names. This should reduces memory usage a
+    # fair bit because these strings are repeated liberally.
+    return self.accounts.setdefault(account, account)
+```
+
 [相关在线工具](https://s.900820.xyz/spys)，[完整链接](https://tools.rotato.app/compress)。
 
 ### 1. Linux
