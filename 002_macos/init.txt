@@ -1,0 +1,14 @@
+# Mac skills 
+
+----
+
+## 修复 MacOS 下 Terminal or iTerm2 启动慢
+
+终端（在我的情况下是 iTerm2 ）启动速度，需要 5-10 秒才能正常输入命令，因为 Apple 保留了系统日志。删除这些文件使我的 shell 再次变得快速。`/private/var/log/asl/*.asl
+`
+
+不要删除其中的所有文件，因为那里有其他与 shell 无关的文件。把它们留在那里。`/private/var/log/asl`，只需要删除和 asl 目录下 `*.asl` 文件。
+
+```bash
+sudo rm /private/var/log/asl/*.asl
+```
