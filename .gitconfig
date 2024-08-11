@@ -1,0 +1,112 @@
+[user]
+    name = Panshi
+    email = shix_112@126.com
+[init]
+    defaultBranch = master
+[core]
+    editor = vim
+    excludesfile = ~/.gitignore_global
+    compression = -1
+    quotepath = false
+    untrackedCache = false
+    whitespace = fix,-indent-with-non-tab,trailing-space,cr-at-eol
+    filemode = true
+    bare = false
+    logallrefupdates = true
+    ignorecase = false
+[diff]
+    tool = vimdiff
+[difftool]
+    prompt = false
+[merge]
+    tool = diff3
+    conflictstyle = diff3
+[commit]
+    template = /Users/vincent/.stCommitMsg
+[filter "lfs"]
+    required = true
+    clean = git-lfs clean -- %f
+    smudge = git-lfs smudge -- %f
+    process = git-lfs filter-process
+[color]
+    ui = true
+    status = auto
+    diff = auto
+    branch = auto
+    interactive = auto
+[color "branch"]
+    current = yellow reverse
+    local = yellow
+    remote = green
+[color "diff"]
+    meta = yellow bold
+    frag = magenta bold
+    old = red bold
+    new = green bold
+[color "status"]
+    added = yellow
+    changed = green
+    untracked = red
+[gc]
+    auto = 0
+[pull]
+    rebase = merges
+[rebase]
+    autoStash = true
+    abbreviateCommands = true
+    autoSquash = true
+    dateRefs = true
+[sequence]
+    editor = interactive-rebase-tool
+[help]
+    autocorrect = 20
+[pretty]
+    better-oneline = "format:%C(auto)%h%d %s %Cblue[%cn]"
+[alias]
+    #
+    cm = commit
+    st = status
+    sw = switch
+    br = branch
+    #
+    undo = reset HEAD~1 --mixed
+    bt = branch --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(contents:subject) %(color:green)(%(committerdate:relative)) [%(authorname)]' --sort=-committerdate
+    #
+    cem = commit --allow-empty -m
+    # git se test2
+    se = !git rev-list --all | xargs git grep -F
+    st = status -sb
+    ls = ls-files
+    lg = log -p
+    last = log -1 HEAD --stat
+    lo = log --oneline
+    l5 = log --oneline -5
+    # one-line log
+    lp = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=short
+    tree = log --pretty=better-oneline --all --graph
+    lol = log --graph --decorate --pretty=oneline --abbrev-commit
+    lola = log --graph --decorate --pretty=oneline --abbrev-commit --all --date=local
+
+    sot = log --oneline --simplify-by-decoration --graph --all
+    spg = log --pretty=format:'%C(auto)%h %C(red)%as %C(blue)%aN%C(auto)%d%C(green) %s'
+
+    clo = !git clean -df && git checkout -- .
+    unc = reset --soft HEAD~1
+    unm = reset --hard ORIG_HEAD
+    uns = reset HEAD
+
+    a   = !cd ${GIT_PREFIX:-.} && git add . && git status
+    aa  = !git add -A && git status
+    ac  = !cd ${GIT_PREFIX:-.} && git add . && git commit
+    aac = !git add -A && git commit
+
+    ms = "!f() { echo $(git log -1 $2 --merges --pretty=format:%P | cut -d' ' -f1)$1$(git log -1 $2 --merges --pretty=format:%P | cut -d' ' -f2); }; f"
+    ml = "!git ls `git merge-span .. $1`"
+    md = "!git diff `git merge-span ... $1`"
+
+    # Display all the git aliases
+    aliases = !git config --get-regexp 'alias.*' | colrm 1 6 | sed 's/[ ]/ = /'
+    # list branches sorted by last modified
+    b = "!git for-each-ref --sort='-authordate' --format='%(authordate)%09%(objectname:short)%09%(refname)' refs/heads | sed -e 's-refs/heads/--'"
+    # list aliases
+    la = "!git config -l | grep alias | cut -c 7-"
