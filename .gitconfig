@@ -7,14 +7,46 @@
     editor = vim
     excludesfile = ~/.gitignore_global
     compression = -1
-    quotepath = false
+    quotepath = true
     untrackedCache = false
     whitespace = fix,-indent-with-non-tab,trailing-space,cr-at-eol
     filemode = true
     bare = false
     logallrefupdates = true
     ignorecase = false
+
+    # delta config start [https://github.com/dandavison/delta]
+    pager = delta
+[interactive]
+    diffFilter = delta --color-only --features=interactive
+[delta]
+    navigate = true
+    side-by-side = true
+    line-numbers = true
+    syntax-theme = Dracula
+    features = my-dark-theme zebra-dark side-by-side line-numbers decorations
+    plus-style = syntax "#003800"
+    minus-style = syntax "#3f0001"
+[delta "interactive"]
+    keep-plus-minus-markers = false
+[delta "decorations"]
+    commit-decoration-style = bold yellow box ul
+    commit-style = raw
+    file-style = bold yellow ul
+    file-decoration-style = none
+    hunk-header-decoration-style = cyan box ul
+    hunk-header-file-style = red
+    hunk-header-line-number-style = "#067a00"
+    hunk-header-style = file line-number syntax
+[delta "line-numbers"]
+    line-numbers-left-style = cyan
+    line-numbers-right-style = cyan
+    line-numbers-minus-style = 124
+    line-numbers-plus-style = 28
 [diff]
+    colorMoved = default
+    # delta config end
+
     tool = vimdiff
 [difftool]
     prompt = false
@@ -110,3 +142,10 @@
     b = "!git for-each-ref --sort='-authordate' --format='%(authordate)%09%(objectname:short)%09%(refname)' refs/heads | sed -e 's-refs/heads/--'"
     # list aliases
     la = "!git config -l | grep alias | cut -c 7-"
+
+[difftool "sourcetree"]
+    cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+    path = 
+[mergetool "sourcetree"]
+    cmd = /Users/vincent/Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+    trustExitCode = true
