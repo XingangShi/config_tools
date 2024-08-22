@@ -200,3 +200,7 @@ function yy() {
   /bin/rm -rf "$tmp"
 }
 
+source "$HOME/.rye/env"
+eval "$(pixi completion --shell zsh)"
+
+[ ! -f "$HOME/.x-cmd.root/X" ] || . "$HOME/.x-cmd.root/X" # boot up x-cmd.
