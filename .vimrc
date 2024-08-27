@@ -21,7 +21,6 @@ Plugin 'VundleVim/Vundle.vim'
 "安装github上的插件格式为 Plugin '用户名/插件仓库名'"
 
 "Plugin 'ms-jpq/chadtree' ", {'branch': 'chad', 'do': 'python3 -m chadtree deps'}
-"
 
 Plugin 'xingangshi/vim-quick-create'
 Plugin 'xingangshi/vim-base-plugin'
@@ -33,15 +32,18 @@ Plugin 'mileszs/ack.vim'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'nathangrigg/vim-beancount'
 Plugin 'dkprice/vim-easygrep'
+
+Plugin 'jreybert/vimagit'
+Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-rhubarb'
+Plugin 'junegunn/gv.vim'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'sodapopcan/vim-twiggy'
+
 Plugin 'vim-pandoc/vim-markdownfootnotes'
 
 Plugin 'cwshugg/argonaut.vim'
 Plugin 'cwshugg/fops.vim'
-
-Plugin 'jreybert/vimagit'
-Plugin 'tpope/vim-fugitive'
-"Plugin 'tpope/vim-rhubarb'
 
 "Plugin 'Xuyuanp/git-nerdtree'
 Plugin 'preservim/nerdtree'
