@@ -101,7 +101,6 @@
     sw = switch
     br = branch
     #
-    undo = reset HEAD~1 --mixed
     bt = branch --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(contents:subject) %(color:green)(%(committerdate:relative)) [%(authorname)]' --sort=-committerdate
     #
     cem = commit --allow-empty -m
@@ -123,25 +122,35 @@
     spg = log --pretty=format:'%C(auto)%h %C(red)%as %C(blue)%aN%C(auto)%d%C(green) %s'
 
     clo = !git clean -df && git checkout -- .
+
+    # Revert commit HEAD^ 的意思是上一个版本，也可以写成HEAD~1
+    #               如果你进行了 2 次 commit，想都撤回，可以使用HEAD~2
     unc = reset --soft HEAD~1
     unm = reset --hard ORIG_HEAD
     uns = reset HEAD
 
     a   = !cd ${GIT_PREFIX:-.} && git add . && git status
     aa  = !git add -A && git status
-    ac  = !cd ${GIT_PREFIX:-.} && git add . && git commit
+    acc = !cd ${GIT_PREFIX:-.} && git add . && git commit
     aac = !git add -A && git commit
 
     ms = "!f() { echo $(git log -1 $2 --merges --pretty=format:%P | cut -d' ' -f1)$1$(git log -1 $2 --merges --pretty=format:%P | cut -d' ' -f2); }; f"
     ml = "!git ls `git merge-span .. $1`"
     md = "!git diff `git merge-span ... $1`"
 
-    # Display all the git aliases
-    aliases = !git config --get-regexp 'alias.*' | colrm 1 6 | sed 's/[ ]/ = /'
     # list branches sorted by last modified
     b = "!git for-each-ref --sort='-authordate' --format='%(authordate)%09%(objectname:short)%09%(refname)' refs/heads | sed -e 's-refs/heads/--'"
-    # list aliases
-    la = "!git config -l | grep alias | cut -c 7-"
+    p = push
+    c = !gcop commit
+    ac = !git add . && gcop commit
+    pf = push --force
+    ghelp = !gcop help
+    gcommit = !gcop commit
+    gconfig = !gcop config
+
+    # Display all the git aliases
+    al  = !git config -l | grep alias | cut -c 7-
+    als = !git config --get-regexp 'alias.*' | colrm 1 6 | sed 's/[ ]/ = /'
 
 [difftool "sourcetree"]
     cmd = opendiff \"$LOCAL\" \"$REMOTE\"
