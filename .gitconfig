@@ -123,11 +123,17 @@
 
     clo = !git clean -df && git checkout -- .
 
-    # Revert commit HEAD^ 的意思是上一个版本，也可以写成HEAD~1
-    #               如果你进行了 2 次 commit，想都撤回，可以使用HEAD~2
-    unc = reset --soft HEAD~1
-    unm = reset --hard ORIG_HEAD
-    uns = reset HEAD
+    # Revert commit HEAD^ 的意思是上一个版本，也可以写成 HEAD^1 HEAD~ HEAD~1，一共 4 种
+    #               如果你进行了 2 次 commit，想都撤回，可以使用 HEAD~2 HEAD^2
+    #               如果你进行了 3 次 commit，想都撤回，可以使用 HEAD~3 HEAD^3
+    undo  = reset --soft HEAD^
+    undo2 = reset --soft HEAD^2
+    undo3 = reset --soft HEAD^3
+    unc   = reset --soft HEAD~1
+    unc2  = reset --soft HEAD~2
+    unc3  = reset --soft HEAD~3
+    unm   = reset --hard ORIG_HEAD
+    uns   = reset HEAD
 
     a   = !cd ${GIT_PREFIX:-.} && git add . && git status
     aa  = !git add -A && git status
