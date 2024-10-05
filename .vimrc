@@ -40,8 +40,6 @@ Plugin 'junegunn/gv.vim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'sodapopcan/vim-twiggy'
 
-Plugin 'vim-pandoc/vim-markdownfootnotes'
-
 Plugin 'cwshugg/argonaut.vim'
 Plugin 'cwshugg/fops.vim'
 
@@ -75,20 +73,45 @@ Plugin 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plugin 'junegunn/fzf.vim'
 
 "for markdown
+Plugin 'sheerun/vim-polyglot'
 Plugin 'godlygeek/tabular'
-Plugin 'plasticboy/vim-markdown'
+Plugin 'preservim/vim-markdown'
+Plugin 'iamcco/mathjax-support-for-mkdp'
 Plugin 'iamcco/markdown-preview.nvim'
+Plugin 'suan/vim-instant-markdown'
+Plugin 'qadzek/link.vim'
+
+let g:link_enabled_filetypes = ['markdown', 'gitcommit']
+
+let g:polyglot_disabled = ['markdown']
+
+let g:mkdp_path_to_chrome = "open -a Google\\ Chrome"
+"let g:mkdp_browserfunc = 'MKDP_browserfunc_default'
+let g:mkdp_auto_start = 1
+let g:mkdp_auto_open = 1
+let g:mkdp_auto_close = 1
+let g:mkdp_refresh_slow = 0
+let g:mkdp_command_for_global = 0
+let g:mkdp_open_to_the_world = 0
+
+" Filetype names and aliases for fenced code blocks.
+let g:vim_markdown_fenced_languages = ['php', 'py=python', 'js=javascript', 'bash=sh', 'viml=vim']
 
 " for rust
 Plugin 'rust-lang/rust.vim'
 Plugin 'neoclide/coc.nvim', {'branch': 'master'}
 Plugin 'dense-analysis/ale'
 
+let b:ale_linters = ['markdownlint', 'vale']
+let b:ale_fixers = ['prettier']
 
 " 可选插件 pandoc-vim
 Plugin 'vim-pandoc/vim-pandoc'
 Plugin 'vim-pandoc/vim-pandoc-syntax'
+Plugin 'vim-pandoc/vim-markdownfootnotes'
 Plugin 'vim-latex/vim-latex'
+
+let g:pandoc#spell#enabled=0
 
 " vim org mode
 Plugin 'jceb/vim-orgmode'
