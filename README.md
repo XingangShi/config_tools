@@ -65,6 +65,31 @@ def account(self, filename, lineno, account):
     return self.accounts.setdefault(account, account)
 ```
 
+#### 0.5 Git 一台电脑配置多个信息
+
+```bash
+# .gitconfig 文件的路径， ~/.gitconfig
+[user]
+name = MianTiao
+email = chi@miantiao.me
+
+[includeIf "gitdir:~/works/"]
+path = ~/.gitconfig-works
+
+[includeIf "gitdir:~/codes/"]
+path = ~/.gitconfig-codes
+
+# ~/.gitconfig-works
+[user]
+name = Works
+email = works@panshi.com
+
+# ~/.gitconfig-codes
+[user]
+name = Codes
+email = codes@panshi.com
+```
+
 ### 1. Linux
 
 > 记录 Linux 相关的工具和配置。
